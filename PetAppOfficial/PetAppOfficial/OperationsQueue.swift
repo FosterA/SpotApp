@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class OperationsQueue{
+    static private var queue = NSOperationQueue()
+    
+    static func addOperation(operation: NSOperation){
+        queue.addOperation(operation)
+    }
+}

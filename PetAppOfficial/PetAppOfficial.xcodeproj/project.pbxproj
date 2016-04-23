@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8950490F1CCA858C00D7C6AD /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8950490E1CCA858C00D7C6AD /* podfile */; };
+		89A4B2851CCABA9D0004937D /* InvitationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4B2841CCABA9D0004937D /* InvitationTableViewController.swift */; };
+		89A4B2881CCAD3100004937D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4B2861CCAD3100004937D /* InvitationCell.swift */; };
+		89A4B2891CCAD3100004937D /* InvitationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A4B2871CCAD3100004937D /* InvitationCell.xib */; };
 		89D352611CCA7E1100228AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352601CCA7E1100228AAE /* AppDelegate.swift */; };
-		89D352631CCA7E1100228AAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352621CCA7E1100228AAE /* ViewController.swift */; };
 		89D352661CCA7E1100228AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D352641CCA7E1100228AAE /* Main.storyboard */; };
 		89D352691CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89D352671CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld */; };
 		89D3526B1CCA7E1100228AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D3526A1CCA7E1100228AAE /* Assets.xcassets */; };
 		89D3526E1CCA7E1100228AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D3526C1CCA7E1100228AAE /* LaunchScreen.storyboard */; };
 		89D352791CCA7E1100228AAE /* PetAppOfficialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352781CCA7E1100228AAE /* PetAppOfficialTests.swift */; };
 		89D352841CCA7E1100228AAE /* PetAppOfficialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352831CCA7E1100228AAE /* PetAppOfficialUITests.swift */; };
+		89D352971CCA7F4E00228AAE /* PetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352951CCA7F4E00228AAE /* PetListTableViewController.swift */; };
+		89D352981CCA7F4E00228AAE /* PetProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352961CCA7F4E00228AAE /* PetProfileTableViewController.swift */; };
+		89EABA0E1CCADFE8006BE1B6 /* PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EABA0C1CCADFE8006BE1B6 /* PetCell.swift */; };
+		89EABA0F1CCADFE8006BE1B6 /* PetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89EABA0D1CCADFE8006BE1B6 /* PetCell.xib */; };
+		89EABA131CCB204A006BE1B6 /* InvitationDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EABA121CCB204A006BE1B6 /* InvitationDownloader.swift */; };
+		89EABA151CCBC871006BE1B6 /* Invitations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EABA141CCBC871006BE1B6 /* Invitations.swift */; };
+		89EABA171CCC108F006BE1B6 /* InvitationUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EABA161CCC108F006BE1B6 /* InvitationUploader.swift */; };
+		89EABA191CCC125B006BE1B6 /* OperationsQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EABA181CCC125B006BE1B6 /* OperationsQueue.swift */; };
+		E772E9E4D5B04B2F3BE8C8BD /* Pods_PetAppOfficial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833C5B7AF48B16D891DB73DF /* Pods_PetAppOfficial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0F182D0AE22B4992575212 /* Pods-PetAppOfficial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetAppOfficial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetAppOfficial/Pods-PetAppOfficial.debug.xcconfig"; sourceTree = "<group>"; };
+		833C5B7AF48B16D891DB73DF /* Pods_PetAppOfficial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetAppOfficial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8950490E1CCA858C00D7C6AD /* podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89A4B2841CCABA9D0004937D /* InvitationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationTableViewController.swift; sourceTree = "<group>"; };
+		89A4B2861CCAD3100004937D /* InvitationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
+		89A4B2871CCAD3100004937D /* InvitationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitationCell.xib; sourceTree = "<group>"; };
 		89D3525D1CCA7E1100228AAE /* PetAppOfficial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetAppOfficial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D352601CCA7E1100228AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		89D352621CCA7E1100228AAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89D352651CCA7E1100228AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89D352681CCA7E1100228AAE /* PetAppOfficial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetAppOfficial.xcdatamodel; sourceTree = "<group>"; };
 		89D3526A1CCA7E1100228AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +66,15 @@
 		89D3527F1CCA7E1100228AAE /* PetAppOfficialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetAppOfficialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D352831CCA7E1100228AAE /* PetAppOfficialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAppOfficialUITests.swift; sourceTree = "<group>"; };
 		89D352851CCA7E1100228AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D352951CCA7F4E00228AAE /* PetListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetListTableViewController.swift; sourceTree = "<group>"; };
+		89D352961CCA7F4E00228AAE /* PetProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetProfileTableViewController.swift; sourceTree = "<group>"; };
+		89EABA0C1CCADFE8006BE1B6 /* PetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCell.swift; sourceTree = "<group>"; };
+		89EABA0D1CCADFE8006BE1B6 /* PetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PetCell.xib; sourceTree = "<group>"; };
+		89EABA121CCB204A006BE1B6 /* InvitationDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationDownloader.swift; sourceTree = "<group>"; };
+		89EABA141CCBC871006BE1B6 /* Invitations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invitations.swift; sourceTree = "<group>"; };
+		89EABA161CCC108F006BE1B6 /* InvitationUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationUploader.swift; sourceTree = "<group>"; };
+		89EABA181CCC125B006BE1B6 /* OperationsQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsQueue.swift; sourceTree = "<group>"; };
+		A4288C3BA5B82094670169AF /* Pods-PetAppOfficial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetAppOfficial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetAppOfficial/Pods-PetAppOfficial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E772E9E4D5B04B2F3BE8C8BD /* Pods_PetAppOfficial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +103,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E227DDEDEC8417FD3F681F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				833C5B7AF48B16D891DB73DF /* Pods_PetAppOfficial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89D352541CCA7E1100228AAE = {
 			isa = PBXGroup;
 			children = (
+				8950490E1CCA858C00D7C6AD /* podfile */,
 				89D3525F1CCA7E1100228AAE /* PetAppOfficial */,
 				89D352771CCA7E1100228AAE /* PetAppOfficialTests */,
 				89D352821CCA7E1100228AAE /* PetAppOfficialUITests */,
 				89D3525E1CCA7E1100228AAE /* Products */,
+				BAB007E53792901BBCEDD8DB /* Pods */,
+				1E227DDEDEC8417FD3F681F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +137,23 @@
 		89D3525F1CCA7E1100228AAE /* PetAppOfficial */ = {
 			isa = PBXGroup;
 			children = (
+				89A4B2841CCABA9D0004937D /* InvitationTableViewController.swift */,
+				89D352951CCA7F4E00228AAE /* PetListTableViewController.swift */,
+				89D352961CCA7F4E00228AAE /* PetProfileTableViewController.swift */,
 				89D352601CCA7E1100228AAE /* AppDelegate.swift */,
-				89D352621CCA7E1100228AAE /* ViewController.swift */,
 				89D352641CCA7E1100228AAE /* Main.storyboard */,
 				89D3526A1CCA7E1100228AAE /* Assets.xcassets */,
 				89D3526C1CCA7E1100228AAE /* LaunchScreen.storyboard */,
 				89D3526F1CCA7E1100228AAE /* Info.plist */,
 				89D352671CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld */,
+				89A4B2861CCAD3100004937D /* InvitationCell.swift */,
+				89A4B2871CCAD3100004937D /* InvitationCell.xib */,
+				89EABA0C1CCADFE8006BE1B6 /* PetCell.swift */,
+				89EABA0D1CCADFE8006BE1B6 /* PetCell.xib */,
+				89EABA121CCB204A006BE1B6 /* InvitationDownloader.swift */,
+				89EABA161CCC108F006BE1B6 /* InvitationUploader.swift */,
+				89EABA141CCBC871006BE1B6 /* Invitations.swift */,
+				89EABA181CCC125B006BE1B6 /* OperationsQueue.swift */,
 			);
 			path = PetAppOfficial;
 			sourceTree = "<group>";
@@ -128,6 +176,15 @@
 			path = PetAppOfficialUITests;
 			sourceTree = "<group>";
 		};
+		BAB007E53792901BBCEDD8DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E0F182D0AE22B4992575212 /* Pods-PetAppOfficial.debug.xcconfig */,
+				A4288C3BA5B82094670169AF /* Pods-PetAppOfficial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89D352881CCA7E1100228AAE /* Build configuration list for PBXNativeTarget "PetAppOfficial" */;
 			buildPhases = (
+				BDB84CCA1EF1B8FA18372580 /* Check Pods Manifest.lock */,
 				89D352591CCA7E1100228AAE /* Sources */,
 				89D3525A1CCA7E1100228AAE /* Frameworks */,
 				89D3525B1CCA7E1100228AAE /* Resources */,
+				3BD4E3251BF162EB4621E387 /* Embed Pods Frameworks */,
+				52DD2204ADA14AD9E1CEAF08 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +294,10 @@
 			files = (
 				89D3526E1CCA7E1100228AAE /* LaunchScreen.storyboard in Resources */,
 				89D3526B1CCA7E1100228AAE /* Assets.xcassets in Resources */,
+				8950490F1CCA858C00D7C6AD /* podfile in Resources */,
+				89EABA0F1CCADFE8006BE1B6 /* PetCell.xib in Resources */,
 				89D352661CCA7E1100228AAE /* Main.storyboard in Resources */,
+				89A4B2891CCAD3100004937D /* InvitationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +317,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BD4E3251BF162EB4621E387 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetAppOfficial/Pods-PetAppOfficial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52DD2204ADA14AD9E1CEAF08 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetAppOfficial/Pods-PetAppOfficial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB84CCA1EF1B8FA18372580 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89D352591CCA7E1100228AAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D352631CCA7E1100228AAE /* ViewController.swift in Sources */,
+				89EABA171CCC108F006BE1B6 /* InvitationUploader.swift in Sources */,
+				89EABA151CCBC871006BE1B6 /* Invitations.swift in Sources */,
+				89A4B2881CCAD3100004937D /* InvitationCell.swift in Sources */,
+				89EABA131CCB204A006BE1B6 /* InvitationDownloader.swift in Sources */,
 				89D352691CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld in Sources */,
+				89EABA191CCC125B006BE1B6 /* OperationsQueue.swift in Sources */,
+				89A4B2851CCABA9D0004937D /* InvitationTableViewController.swift in Sources */,
+				89D352971CCA7F4E00228AAE /* PetListTableViewController.swift in Sources */,
+				89EABA0E1CCADFE8006BE1B6 /* PetCell.swift in Sources */,
 				89D352611CCA7E1100228AAE /* AppDelegate.swift in Sources */,
+				89D352981CCA7F4E00228AAE /* PetProfileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +522,13 @@
 		};
 		89D352891CCA7E1100228AAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0F182D0AE22B4992575212 /* Pods-PetAppOfficial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Parse-iOS",
+				);
 				INFOPLIST_FILE = PetAppOfficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.cs.PetAppOfficial;
@@ -414,8 +538,13 @@
 		};
 		89D3528A1CCA7E1100228AAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4288C3BA5B82094670169AF /* Pods-PetAppOfficial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Parse-iOS",
+				);
 				INFOPLIST_FILE = PetAppOfficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.missouri.cs.PetAppOfficial;
@@ -488,6 +617,7 @@
 				89D3528A1CCA7E1100228AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89D3528B1CCA7E1100228AAE /* Build configuration list for PBXNativeTarget "PetAppOfficialTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +626,7 @@
 				89D3528D1CCA7E1100228AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89D3528E1CCA7E1100228AAE /* Build configuration list for PBXNativeTarget "PetAppOfficialUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +635,7 @@
 				89D352901CCA7E1100228AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

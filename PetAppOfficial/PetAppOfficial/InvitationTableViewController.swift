@@ -7,18 +7,55 @@
 //
 
 import UIKit
+import CoreData
+import ParseUI
 
 class InvitationTableViewController: UITableViewController {
-
+    
+    var newID: String?
+    let invitationStatus = ["Confirmed","Pending","Past"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Invitations.setTableViewController(self)
+        
+        
+        self.refreshControl?.addTarget(self, action: #selector(InvitationTableViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        
+        let nib = UINib(nibName: "InvitationCell", bundle: nil)
+        tableView.registerNib(nib, forCellReuseIdentifier: "invitationCell")
 
+        self.title = "Invitations"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    func refresh(sender:AnyObject)
+    {
+        // Updating your data here...
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let newInvitationButton = UIBarButtonItem()
+        newInvitationButton.title = "New"
+        newInvitationButton.style = .Plain
+        newInvitationButton.target = self
+        newInvitationButton.action = #selector(InvitationTableViewController.performNewInvitationSegue)
+        navigationItem.rightBarButtonItem = newInvitationButton
+        
+        tableView.reloadData()
+    }
+    
+    func performNewInvitationSegue(){
+        performSegueWithIdentifier("newInvitation", sender: self)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,23 +66,27 @@ class InvitationTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return Invitations.getArray().count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return Invitations.getArray()[section].count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("invitationCell", forIndexPath: indexPath) as! InvitationCell
 
-        // Configure the cell...
+        cell.label.text = Invitations.getArray()[indexPath.section][indexPath.row]
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return invitationStatus[section]
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,14 +123,15 @@ class InvitationTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let destinationViewController = segue.destinationViewController
+        
+        if let newInvitationViewController = destinationViewController as? PetListTableViewController{
+                    newInvitationViewController.isAddInvitation = true
+        }
     }
-    */
 
 }
