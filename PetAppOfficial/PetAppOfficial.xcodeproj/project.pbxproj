@@ -11,6 +11,19 @@
 		89A4B2851CCABA9D0004937D /* InvitationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4B2841CCABA9D0004937D /* InvitationTableViewController.swift */; };
 		89A4B2881CCAD3100004937D /* InvitationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4B2861CCAD3100004937D /* InvitationCell.swift */; };
 		89A4B2891CCAD3100004937D /* InvitationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A4B2871CCAD3100004937D /* InvitationCell.xib */; };
+		89BEFEC51CCEC42E0074F88A /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEFEC41CCEC42E0074F88A /* Pets.swift */; };
+		89BEFEC91CCED39B0074F88A /* PetsInInvitationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEFEC81CCED39B0074F88A /* PetsInInvitationTableViewController.swift */; };
+		89C9A08B1CCC970500643074 /* add.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89C9A0811CCC970500643074 /* add.jpg */; };
+		89C9A08C1CCC970500643074 /* addPetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C9A0821CCC970500643074 /* addPetCell.xib */; };
+		89C9A08D1CCC970500643074 /* AddPetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9A0831CCC970500643074 /* AddPetCollectionViewCell.swift */; };
+		89C9A08E1CCC970500643074 /* flipoff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89C9A0841CCC970500643074 /* flipoff.jpg */; };
+		89C9A08F1CCC970500643074 /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C9A0851CCC970500643074 /* imageCell.xib */; };
+		89C9A0901CCC970500643074 /* Party-hat-hedgehog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89C9A0861CCC970500643074 /* Party-hat-hedgehog.jpg */; };
+		89C9A0911CCC970500643074 /* PetAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9A0871CCC970500643074 /* PetAppViewController.swift */; };
+		89C9A0921CCC970500643074 /* petCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C9A0881CCC970500643074 /* petCollectionCell.xib */; };
+		89C9A0931CCC970500643074 /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9A0891CCC970500643074 /* PetCollectionViewCell.swift */; };
+		89C9A0941CCC970500643074 /* PetImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9A08A1CCC970500643074 /* PetImageCollectionViewCell.swift */; };
+		89C9A09A1CCE94CC00643074 /* NewInvitationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9A0991CCE94CC00643074 /* NewInvitationTableViewController.swift */; };
 		89D352611CCA7E1100228AAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D352601CCA7E1100228AAE /* AppDelegate.swift */; };
 		89D352661CCA7E1100228AAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D352641CCA7E1100228AAE /* Main.storyboard */; };
 		89D352691CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89D352671CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld */; };
@@ -53,6 +66,19 @@
 		89A4B2841CCABA9D0004937D /* InvitationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationTableViewController.swift; sourceTree = "<group>"; };
 		89A4B2861CCAD3100004937D /* InvitationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitationCell.swift; sourceTree = "<group>"; };
 		89A4B2871CCAD3100004937D /* InvitationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvitationCell.xib; sourceTree = "<group>"; };
+		89BEFEC41CCEC42E0074F88A /* Pets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		89BEFEC81CCED39B0074F88A /* PetsInInvitationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetsInInvitationTableViewController.swift; sourceTree = "<group>"; };
+		89C9A0811CCC970500643074 /* add.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add.jpg; sourceTree = "<group>"; };
+		89C9A0821CCC970500643074 /* addPetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addPetCell.xib; sourceTree = "<group>"; };
+		89C9A0831CCC970500643074 /* AddPetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPetCollectionViewCell.swift; sourceTree = "<group>"; };
+		89C9A0841CCC970500643074 /* flipoff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flipoff.jpg; sourceTree = "<group>"; };
+		89C9A0851CCC970500643074 /* imageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
+		89C9A0861CCC970500643074 /* Party-hat-hedgehog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Party-hat-hedgehog.jpg"; sourceTree = "<group>"; };
+		89C9A0871CCC970500643074 /* PetAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetAppViewController.swift; sourceTree = "<group>"; };
+		89C9A0881CCC970500643074 /* petCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = petCollectionCell.xib; sourceTree = "<group>"; };
+		89C9A0891CCC970500643074 /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
+		89C9A08A1CCC970500643074 /* PetImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		89C9A0991CCE94CC00643074 /* NewInvitationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewInvitationTableViewController.swift; sourceTree = "<group>"; };
 		89D3525D1CCA7E1100228AAE /* PetAppOfficial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetAppOfficial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D352601CCA7E1100228AAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D352651CCA7E1100228AAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +137,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		89C9A0961CCC974B00643074 /* Emma's Shtuff */ = {
+			isa = PBXGroup;
+			children = (
+				89C9A0811CCC970500643074 /* add.jpg */,
+				89C9A0821CCC970500643074 /* addPetCell.xib */,
+				89C9A0831CCC970500643074 /* AddPetCollectionViewCell.swift */,
+				89C9A0841CCC970500643074 /* flipoff.jpg */,
+				89C9A0851CCC970500643074 /* imageCell.xib */,
+				89C9A0861CCC970500643074 /* Party-hat-hedgehog.jpg */,
+				89C9A0871CCC970500643074 /* PetAppViewController.swift */,
+				89C9A0881CCC970500643074 /* petCollectionCell.xib */,
+				89C9A0891CCC970500643074 /* PetCollectionViewCell.swift */,
+				89C9A08A1CCC970500643074 /* PetImageCollectionViewCell.swift */,
+			);
+			name = "Emma's Shtuff";
+			sourceTree = "<group>";
+		};
 		89D352541CCA7E1100228AAE = {
 			isa = PBXGroup;
 			children = (
@@ -137,11 +180,13 @@
 		89D3525F1CCA7E1100228AAE /* PetAppOfficial */ = {
 			isa = PBXGroup;
 			children = (
+				89D352641CCA7E1100228AAE /* Main.storyboard */,
+				89C9A0961CCC974B00643074 /* Emma's Shtuff */,
 				89A4B2841CCABA9D0004937D /* InvitationTableViewController.swift */,
+				89BEFEC81CCED39B0074F88A /* PetsInInvitationTableViewController.swift */,
 				89D352951CCA7F4E00228AAE /* PetListTableViewController.swift */,
 				89D352961CCA7F4E00228AAE /* PetProfileTableViewController.swift */,
 				89D352601CCA7E1100228AAE /* AppDelegate.swift */,
-				89D352641CCA7E1100228AAE /* Main.storyboard */,
 				89D3526A1CCA7E1100228AAE /* Assets.xcassets */,
 				89D3526C1CCA7E1100228AAE /* LaunchScreen.storyboard */,
 				89D3526F1CCA7E1100228AAE /* Info.plist */,
@@ -154,6 +199,8 @@
 				89EABA161CCC108F006BE1B6 /* InvitationUploader.swift */,
 				89EABA141CCBC871006BE1B6 /* Invitations.swift */,
 				89EABA181CCC125B006BE1B6 /* OperationsQueue.swift */,
+				89C9A0991CCE94CC00643074 /* NewInvitationTableViewController.swift */,
+				89BEFEC41CCEC42E0074F88A /* Pets.swift */,
 			);
 			path = PetAppOfficial;
 			sourceTree = "<group>";
@@ -292,12 +339,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C9A08B1CCC970500643074 /* add.jpg in Resources */,
+				89C9A08C1CCC970500643074 /* addPetCell.xib in Resources */,
+				89C9A08E1CCC970500643074 /* flipoff.jpg in Resources */,
 				89D3526E1CCA7E1100228AAE /* LaunchScreen.storyboard in Resources */,
 				89D3526B1CCA7E1100228AAE /* Assets.xcassets in Resources */,
 				8950490F1CCA858C00D7C6AD /* podfile in Resources */,
 				89EABA0F1CCADFE8006BE1B6 /* PetCell.xib in Resources */,
 				89D352661CCA7E1100228AAE /* Main.storyboard in Resources */,
 				89A4B2891CCAD3100004937D /* InvitationCell.xib in Resources */,
+				89C9A08F1CCC970500643074 /* imageCell.xib in Resources */,
+				89C9A0901CCC970500643074 /* Party-hat-hedgehog.jpg in Resources */,
+				89C9A0921CCC970500643074 /* petCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,13 +426,20 @@
 				89EABA171CCC108F006BE1B6 /* InvitationUploader.swift in Sources */,
 				89EABA151CCBC871006BE1B6 /* Invitations.swift in Sources */,
 				89A4B2881CCAD3100004937D /* InvitationCell.swift in Sources */,
+				89C9A0911CCC970500643074 /* PetAppViewController.swift in Sources */,
 				89EABA131CCB204A006BE1B6 /* InvitationDownloader.swift in Sources */,
+				89C9A0941CCC970500643074 /* PetImageCollectionViewCell.swift in Sources */,
 				89D352691CCA7E1100228AAE /* PetAppOfficial.xcdatamodeld in Sources */,
+				89C9A09A1CCE94CC00643074 /* NewInvitationTableViewController.swift in Sources */,
 				89EABA191CCC125B006BE1B6 /* OperationsQueue.swift in Sources */,
+				89BEFEC91CCED39B0074F88A /* PetsInInvitationTableViewController.swift in Sources */,
+				89C9A08D1CCC970500643074 /* AddPetCollectionViewCell.swift in Sources */,
 				89A4B2851CCABA9D0004937D /* InvitationTableViewController.swift in Sources */,
+				89BEFEC51CCEC42E0074F88A /* Pets.swift in Sources */,
 				89D352971CCA7F4E00228AAE /* PetListTableViewController.swift in Sources */,
 				89EABA0E1CCADFE8006BE1B6 /* PetCell.swift in Sources */,
 				89D352611CCA7E1100228AAE /* AppDelegate.swift in Sources */,
+				89C9A0931CCC970500643074 /* PetCollectionViewCell.swift in Sources */,
 				89D352981CCA7F4E00228AAE /* PetProfileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

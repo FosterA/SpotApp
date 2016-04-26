@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PetCollectionViewController.swift
 //  PetApp
 //
 //  Created by Emma Schiermeier on 3/17/16.
@@ -9,7 +9,7 @@
 import UIKit
 //add UICollectionViewDataSource
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
+class PetCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var photoCollection: UICollectionView!
     @IBOutlet weak var activityCollection: UITableView!

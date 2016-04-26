@@ -20,7 +20,7 @@ class PetProfileTableViewController: UITableViewController {
     @IBOutlet weak var vetInfoNeeds: UITextView!
     
     var pet: NSManagedObject?
-    var pfPet: PFObject?
+    var pfPet = PFObject(className: "Pet")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,39 +60,35 @@ class PetProfileTableViewController: UITableViewController {
             let petEntity =  NSEntityDescription.entityForName("Pet", inManagedObjectContext: managedContext)
             
             pet = NSManagedObject(entity: petEntity!, insertIntoManagedObjectContext:managedContext)
-            if let id = pet?.valueForKey("id") as? String{
-                let query = PFQuery(className: "Pet")
-                query.getObjectInBackgroundWithId(id, block: { (object, error) -> Void in
-                    self.pfPet = object
-                })
-            }
         }
-        if pfPet == nil {
-            pfPet = PFObject(className: "Pet")
+        else{
+            pfPet.objectId = pet?.valueForKey("id") as? String
         }
         
         var profileImageData: NSData?
         if let profileImage = profileImage.image{
             if let profileImageData = UIImageJPEGRepresentation(profileImage, 1.0){
-                pfPet?["PetProfileImage"] = PFFile(name: "ProfileImage.JPG", data: profileImageData)
+                pfPet["PetProfileImage"] = PFFile(name: "ProfileImage.JPG", data: profileImageData)
                 pet?.setValue(profileImageData, forKey: "profileImage")
             }
         }
-        pfPet?["PetName"] = petName.text
+        pfPet["PetName"] = petName.text
         pet?.setValue(petName.text, forKey: "petName")
-        pfPet?["OwnerName"] = ownerName.text
+        pfPet["OwnerName"] = ownerName.text
         pet?.setValue(ownerName.text, forKey: "ownerName")
-        pfPet?["Diet"] = dietNeeds.text
+        pfPet["Diet"] = dietNeeds.text
         pet?.setValue(dietNeeds.text, forKey: "diet")
-        pfPet?["Medication"] = medicationNeeds.text
+        pfPet["Medication"] = medicationNeeds.text
         pet?.setValue(medicationNeeds.text, forKey: "medication")
-        pfPet?["Vet"] = vetInfoNeeds.text
+        pfPet["Vet"] = vetInfoNeeds.text
         pet?.setValue(vetInfoNeeds.text, forKey: "vet")
-        pfPet?.saveInBackgroundWithBlock{(success,error) -> Void in
-            if let id = self.pfPet?.objectId{
+        pfPet.saveInBackgroundWithBlock{(success,error) -> Void in
+            if let id = self.pfPet.objectId{
                 self.pet?.setValue(id, forKey: "id")
             }
-            
+            if let pet = self.pet{
+                Pets.addPet(pet)
+            }
             // Complete save and handle potential error
             do {
                 try managedContext.save()

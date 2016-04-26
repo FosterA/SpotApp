@@ -10,9 +10,15 @@ import UIKit
 import CoreData
 import Parse
 
+protocol PetsListProtocol{
+    func addPetsToInvitation(selectedPets: [NSManagedObject])
+}
+
 class PetListTableViewController: UITableViewController {
 
+    var delegate : PetsListProtocol?
     var pets = [NSManagedObject]()
+    var excludedPets : [NSManagedObject]?
     var isAddInvitation = false
     
     override func viewDidLoad() {
@@ -35,15 +41,18 @@ class PetListTableViewController: UITableViewController {
         }
         else{
             let sendInvitationButton = UIBarButtonItem()
-            sendInvitationButton.title = "Send"
+            sendInvitationButton.title = "Add"
             sendInvitationButton.style = .Plain
             sendInvitationButton.target = self
-            sendInvitationButton.action = #selector(PetListTableViewController.sendInvitation)
+            sendInvitationButton.action = #selector(PetListTableViewController.addPets)
             navigationItem.rightBarButtonItem = sendInvitationButton
             //navigationItem.leftBarButtonItem!.title = "Cancel"
         }
      
-        loadPets()
+        pets = Pets.getArray()
+        if let excludedPets = excludedPets{
+            pets = pets.filter({!excludedPets.contains($0)})
+        }
         tableView.reloadData()
     }
 
@@ -52,41 +61,19 @@ class PetListTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func loadPets(){
-        //Load saved pet entities from core data.
-        //Get the app delegate. Must be casted because it could have been subclassed
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        //Get methods to do core data stuff
-        let managedContext = appDelegate.managedObjectContext
-        //Looks for entities of type note
-        let fetchRequest = NSFetchRequest(entityName:"Pet")
-        
-        do {
-            let fetchedResults =
-                try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
-            
-            if let results = fetchedResults {
-                pets = results
-            } else {
-                print("Could not fetch pets")
-            }
-        } catch {
-            return
-        }
-    }
-    
     func performInvitationSegue(){
         performSegueWithIdentifier("invitations", sender: self)
     }
     
-    func sendInvitation(){
+    func addPets(){
         if let indices = tableView.indexPathsForSelectedRows{
             var selectedPets=[NSManagedObject]()
             for index in indices{
                 selectedPets.append(pets[index.row])
             }
-            OperationsQueue.addOperation(InvitationUploader(pets: selectedPets))
+            //OperationsQueue.addOperation(InvitationUploader(pets: selectedPets))
             self.isAddInvitation = false
+            delegate?.addPetsToInvitation(selectedPets)
             self.navigationController?.popViewControllerAnimated(true)
         }
         else{
@@ -111,13 +98,19 @@ class PetListTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("petCell", forIndexPath: indexPath)
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("petCell", forIndexPath: indexPath) as? PetCell
         let pet = pets[indexPath.row]
-        if let title = pet.valueForKey("petName") as? String{
-            cell.textLabel?.text = title
+        cell?.petName.text = pet.valueForKey("petName") as? String
+        if let imageData = pet.valueForKey("profileImage") as? NSData{
+            if let image = UIImage(data: imageData){
+                if let cell = cell{
+                    cell.petProfileImage.image = image
+                    cell.petProfileImage.layer.cornerRadius = cell.petProfileImage.frame.size.width/2
+                    cell.petProfileImage.clipsToBounds = true
+                }
+            }
         }
-        return cell
+        return cell!
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

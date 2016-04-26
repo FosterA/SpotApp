@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="5" y="275"/>
         </scene>
-        <!--View Controller-->
+        <!--Pet Collection View Controller-->
         <scene sceneID="P0e-sQ-WuX">
             <objects>
-                <viewController id="ovB-6Y-cSJ" customClass="ViewController" customModule="PetApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ovB-6Y-cSJ" customClass="PetCollectionViewController" customModule="PetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4qA-FG-1mN"/>
                         <viewControllerLayoutGuide type="bottom" id="oCp-xK-15b"/>
@@ -70,7 +70,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6R-9W-er7" id="Xyb-AP-mv4">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrb-nt-hkf">

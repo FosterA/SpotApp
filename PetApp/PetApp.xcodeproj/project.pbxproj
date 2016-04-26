@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89C9A0801CCC967700643074 /* PetAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C9A07F1CCC967700643074 /* PetAppViewController.swift */; };
 		C900B4CD1CB6D27D003D4F6A /* petCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C900B4CC1CB6D27D003D4F6A /* petCollectionCell.xib */; };
 		C900B4D11CB6E0F3003D4F6A /* imageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C900B4D01CB6E0F3003D4F6A /* imageCell.xib */; };
 		C975A9FA1CCC495800152B4F /* Party-hat-hedgehog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C975A9F91CCC495800152B4F /* Party-hat-hedgehog.jpg */; };
 		C975A9FC1CCC4A7C00152B4F /* PetImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975A9FB1CCC4A7C00152B4F /* PetImageCollectionViewCell.swift */; };
 		C9CC8F0F1CC94B9400F0364B /* add.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9CC8F0E1CC94B9400F0364B /* add.jpg */; };
 		C9D992F81C9B2874001CD2B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D992F71C9B2874001CD2B5 /* AppDelegate.swift */; };
-		C9D992FA1C9B2874001CD2B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D992F91C9B2874001CD2B5 /* ViewController.swift */; };
 		C9D992FD1C9B2874001CD2B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D992FB1C9B2874001CD2B5 /* Main.storyboard */; };
 		C9D992FF1C9B2874001CD2B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D992FE1C9B2874001CD2B5 /* Assets.xcassets */; };
 		C9D993021C9B2874001CD2B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D993001C9B2874001CD2B5 /* LaunchScreen.storyboard */; };
@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89C9A07F1CCC967700643074 /* PetAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetAppViewController.swift; sourceTree = "<group>"; };
 		C900B4CC1CB6D27D003D4F6A /* petCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = petCollectionCell.xib; sourceTree = "<group>"; };
 		C900B4D01CB6E0F3003D4F6A /* imageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageCell.xib; sourceTree = "<group>"; };
 		C975A9F91CCC495800152B4F /* Party-hat-hedgehog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Party-hat-hedgehog.jpg"; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		C9CC8F0E1CC94B9400F0364B /* add.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add.jpg; sourceTree = "<group>"; };
 		C9D992F41C9B2874001CD2B5 /* PetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D992F71C9B2874001CD2B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9D992F91C9B2874001CD2B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9D992FC1C9B2874001CD2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9D992FE1C9B2874001CD2B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9D993011C9B2874001CD2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 				C9CC8F0E1CC94B9400F0364B /* add.jpg */,
 				C9FCE7371CC01DCA00594D30 /* flipoff.jpg */,
 				C9D992F71C9B2874001CD2B5 /* AppDelegate.swift */,
-				C9D992F91C9B2874001CD2B5 /* ViewController.swift */,
+				89C9A07F1CCC967700643074 /* PetAppViewController.swift */,
 				C9FCE72F1CC00DAC00594D30 /* addPetCell.xib */,
 				C9FCE7351CC0153700594D30 /* PetCollectionViewCell.swift */,
 				C9FCE7331CC0149400594D30 /* AddPetCollectionViewCell.swift */,
@@ -169,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C975A9FC1CCC4A7C00152B4F /* PetImageCollectionViewCell.swift in Sources */,
+				89C9A0801CCC967700643074 /* PetAppViewController.swift in Sources */,
 				C9FCE7341CC0149400594D30 /* AddPetCollectionViewCell.swift in Sources */,
-				C9D992FA1C9B2874001CD2B5 /* ViewController.swift in Sources */,
 				C9FCE7361CC0153700594D30 /* PetCollectionViewCell.swift in Sources */,
 				C9D992F81C9B2874001CD2B5 /* AppDelegate.swift in Sources */,
 			);

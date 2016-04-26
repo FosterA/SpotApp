@@ -10,6 +10,9 @@ import UIKit
 
 class PetCell: UITableViewCell {
 
+    @IBOutlet weak var petProfileImage: UIImageView!
+    @IBOutlet weak var petName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -7,22 +7,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="petCell" textLabel="gxe-MR-Tpc" style="IBUITableViewCellStyleDefault" id="2MI-MB-lB0">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="petCell" id="2MI-MB-lB0" customClass="PetCell" customModule="PetAppOfficial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2MI-MB-lB0" id="Z8p-Od-Cmi">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gxe-MR-Tpc">
-                        <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4xK-X4-cvj">
+                        <rect key="frame" x="10" y="-0.5" width="50" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="5Hh-xi-H9E"/>
+                            <constraint firstAttribute="height" constant="50" id="d5r-dQ-FOl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPH-GF-ESv">
+                        <rect key="frame" x="70" y="14.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="iPH-GF-ESv" firstAttribute="leading" secondItem="4xK-X4-cvj" secondAttribute="trailing" constant="10" id="5Ww-g2-ooC"/>
+                    <constraint firstItem="iPH-GF-ESv" firstAttribute="centerY" secondItem="Z8p-Od-Cmi" secondAttribute="centerY" id="9CR-Ks-O6o"/>
+                    <constraint firstItem="4xK-X4-cvj" firstAttribute="centerY" secondItem="Z8p-Od-Cmi" secondAttribute="centerY" id="pAT-uF-Ul6"/>
+                    <constraint firstItem="4xK-X4-cvj" firstAttribute="leading" secondItem="Z8p-Od-Cmi" secondAttribute="leading" constant="10" id="soG-eF-hN2"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="petName" destination="iPH-GF-ESv" id="e8F-eO-G7Y"/>
+                <outlet property="petProfileImage" destination="4xK-X4-cvj" id="bpB-61-fZG"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
